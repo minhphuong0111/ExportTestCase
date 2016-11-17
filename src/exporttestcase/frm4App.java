@@ -907,7 +907,7 @@ public class frm4App extends javax.swing.JFrame {
             
             //ket thuc gan gia tri cho export va ltemp
         }
-        
+        objExcelFile.createExcelFile(export,"template.xlsx");
         
         
         //lap qua tung dong trong du lieu va bo qua dong dau tien
@@ -1001,7 +1001,7 @@ public class frm4App extends javax.swing.JFrame {
         header.add("ObjectPA");
         header.add("Value");
         export.add(0, header);
-        objExcelFile.createExcelFile(export);
+        objExcelFile.createExcelFile(export,"TestCase.xlsx");
         export.clear();
     }//GEN-LAST:event_btnExportActionPerformed
 

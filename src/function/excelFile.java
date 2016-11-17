@@ -34,9 +34,9 @@ public class excelFile {
         excelData = data;
     }
     
-    public void createExcelFile(List<List<String>> data)
+    public void createExcelFile(List<List<String>> data, String fileName)
     {
-        String filePath = "TESTCASE.xlsx";
+        String filePath = "fileName";
         File file = new File(filePath);
         XSSFWorkbook workbook = new XSSFWorkbook();
         XSSFSheet sheet = workbook.createSheet("KeywordFramework");
